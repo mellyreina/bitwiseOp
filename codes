@@ -1,0 +1,29 @@
+#include <iostream>
+#include <conio.h>
+#include <stdio.h>
+using namespace std;
+
+int main()
+{ 
+   unsigned int a=13, b;
+   b= ~a; /*(bitwise NOT) in C or C++ takes one number and inverts all bits of it.*/
+   printf("%u \n",b);
+   
+   b= a<<1; /*(left shift) in C or C++ takes two numbers, the left shifts the bits of the first operand,
+    and the second operand decides the number of places to shift. */
+   printf("%d \n",b);
+   
+   b= a<<3;
+   printf("%d \n",b);
+   
+   b= a>>1; /* (right shift) in C or C++ takes two numbers, right shifts the bits of the first operand
+   , and the second operand decides the number of places to shift. */
+   printf("%d \n",b);
+   
+   b= a>>3;
+   printf("%d \n",b);
+   
+   
+	getch();
+	return 0;
+}
